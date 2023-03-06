@@ -16,12 +16,15 @@ header{
     box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
     margin-top:0 ;
 }
-/**MAIN**/
+
+/**MAIN***/
+/***RESTAURANT***/
 .location{
     font-family: roboto,sans-serif;
 }
-
-/***RESTAURANT***/
+.searchnav button{
+    border-radius: 20px;
+}
 .restaurant
 {
     margin: 200px;
