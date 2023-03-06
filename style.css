@@ -1,0 +1,62 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+}
+
+/***/
+header{
+    text-align: center;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
+    margin-top:0 ;
+}
+/**MAIN**/
+.location{
+    font-family: roboto,sans-serif;
+}
+
+/***RESTAURANT***/
+.restaurant
+{
+    margin: 200px;
+    border: 2px solid red;
+}
+.restaurant img{
+    width: 200px;
+}
+
+/**FONCTIONNEMENT**/
+.fontionnement{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.fontionnement button{
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+.fontionnement button i{
+    margin-right: px;
+}
+
+/***FOOTER**/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    font-family: roboto;
+}
+footer i {
+    padding-right: 10px;
+}
