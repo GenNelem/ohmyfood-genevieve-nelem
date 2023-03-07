@@ -17,8 +17,8 @@ header{
     margin-top:0 ;
 }
 
-/**MAIN***/
-/***RESTAURANT***/
+
+
 .location{
     font-family: roboto,sans-serif;
     display: flex;
@@ -32,6 +32,7 @@ header{
     margin-right: 15px;
 }
 
+/****MAIN****/
 /***DESCRIPTION****/
 .description{
     border: 3px solid green;
@@ -40,10 +41,12 @@ header{
     display: block;
     text-align: center;
 }
+
 .boutton-explorez button{
     border-radius: 20px;
     padding: 20px;
     height: 30px;
+    margin: auto;
     margin-bottom: 50px;
     color: white;
     text-align: center;
@@ -53,6 +56,7 @@ header{
     background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
     transition:0.7s;
 }
+
 /****FONTIONNEMENT*****/
 .fonctionnement{
     font-family: roboto, sans-serif;
@@ -80,7 +84,7 @@ header{
     border-radius: 20px;
     padding: 30px;
     width: 30%;
-    height: 100%s;
+    height: 100%;
     margin-left: -5px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
     background-color: #f5f5f5;
@@ -88,12 +92,12 @@ header{
 }
 .fonctionnement button:hover{
     transition: 0.7s;
-    background-color:  #e7d6fc;
+    background-color:  #ded0f0;
 }
 .fonctionnement ul {
     display: flex;
     flex-direction: row;
-    padding: 25px;
+    flex-wrap: nowrap;
     border: 5px solid greenyellow;
     align-items: center;
     flex-wrap: nowrap;
@@ -104,56 +108,54 @@ header{
 .fonctionnement i{
     padding-right: 15px;
 }
+
+
 /***RESTAURANT***/
 .restaurants
 {
-    margin-left: 40px;
-   align-items: center;
     border: 2px solid red;
 }
-.restaurants .card p{
+.container{
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border: solid 2px fuchsia;
 }
-.restaurants .card img{
-    width:50% ;
-}
-.restaurants .card i{
-    border: 1px solid purple;
-    margin-left: 800px;
-   
-}
-.restaurants .card i:hover{
-    transition: 0.7s;
-    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-}
-
-/**FONCTIONNEMENT**/
-.fontionnement{
+.container .card{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: white;
+    margin: 30px 10px;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
+    border: solid 3px blue;
 }
-.fontionnement button{
-    padding: 10px;
-    border-radius: 10px;
-   
+.container .card .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,1,2);
 }
 
-.fontionnement button i{
-    margin-right: px;
-}
 
 /***FOOTER**/
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(53, 53, 53);
     color: white;
     font-family: roboto;
+}
+footer h2{
+    font-family:'Shrikhand', cursive;
 }
 footer i {
     padding-right: 10px;
