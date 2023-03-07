@@ -21,17 +21,112 @@ header{
 /***RESTAURANT***/
 .location{
     font-family: roboto,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: #eaeaea;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+    background-size: auto;
 }
-.searchnav button{
+.location i{
+    margin-right: 15px;
+}
+
+/***DESCRIPTION****/
+.description{
+    border: 3px solid green;
+    background: 		hsl(0, 0%, 100%);
+    font-family: roboto, sans-serif;
+    display: block;
+    text-align: center;
+}
+.boutton-explorez button{
     border-radius: 20px;
+    padding: 20px;
+    height: 30px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
-.restaurant
+.boutton-explorez button:hover{
+    background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+    transition:0.7s;
+}
+/****FONTIONNEMENT*****/
+.fonctionnement{
+    font-family: roboto, sans-serif;
+    display: block;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding-inline-start: 40px;
+    border: 3px solid red;
+}
+.stepsnumber {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50%;
+    padding: 9px 5px 9px 5px;
+    margin-left: -20px;
+    width: 4%;
+    display: block;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    position: absolute;
+}
+.fonctionnement button{
+    border-radius: 20px;
+    padding: 30px;
+    width: 30%;
+    height: 100%s;
+    margin-left: -5px;
+    box-shadow: 1px 2px 8px 2px #c4c4c4;
+    background-color: #f5f5f5;
+    border: lightgrey;
+}
+.fonctionnement button:hover{
+    transition: 0.7s;
+    background-color:  #e7d6fc;
+}
+.fonctionnement ul {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    border: 5px solid greenyellow;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 15px 20px 15px 20px;
+    margin-left: -10px;
+}
+.fonctionnement i{
+    padding-right: 15px;
+}
+/***RESTAURANT***/
+.restaurants
 {
-    margin: 200px;
+    margin-left: 40px;
+   align-items: center;
     border: 2px solid red;
 }
-.restaurant img{
-    width: 200px;
+.restaurants .card p{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.restaurants .card img{
+    width:50% ;
+}
+.restaurants .card i{
+    border: 1px solid purple;
+    margin-left: 800px;
+   
+}
+.restaurants .card i:hover{
+    transition: 0.7s;
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 
 /**FONCTIONNEMENT**/
