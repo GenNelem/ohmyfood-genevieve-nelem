@@ -1,32 +1,10 @@
-@media (min-width: 200px) and (max-width:700px){
-   
-    .fonctionnement{
-        margin-left: -20px;
-    }
-   
-    .fonctionnement button{
-     width: 100%;
-     height: 100%;
-    }
-    .fonctionnement ul{
-        margin-left: -40px;
-    }
-    .stepsnumber {
-        background-color: #9356dc;
-        color: white;
-        border-radius: 50%;
-        padding: 9px 5px 9px 5px;
-        margin-left: -20px;
-        width: 10%;
-        position: absolute;
-    }
-  .restaurants{
-    margin-left: 10px;
-  }
-  .restaurants .card img{
-    width: 90%;
-    height: 50%;
-  }
-  
-     
+@media (min-width: 250px) and (max-width:700px){
+  .restaurant-name i{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 160px;
+    cursor: pointer;
+  }   
+
 }

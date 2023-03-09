@@ -17,7 +17,10 @@ header{
     margin-top:0 ;
 }
 
-/***MAIN***/ 
+
+
+/****MAIN****/
+/***DESCRIPTION****/
 
 .location{
     font-family: roboto,sans-serif;
@@ -31,9 +34,6 @@ header{
 .location i{
     margin-right: 15px;
 }
-
-/****MAIN****/
-/***DESCRIPTION****/
 .description{
     background:hsl(0, 0%, 100%);
     font-family: roboto, sans-serif;
@@ -57,15 +57,13 @@ header{
     transition:0.7s;
 }
 
-/****FONTIONNEMENT*****/
+/****FONCTIONNEMENT*****/
 .fonctionnement{
     font-family: roboto, sans-serif;
-    display: block;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
-    margin-inline-end: 0px;
-    margin-inline-start: 40px;
-    padding-inline-start: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    border: #9356dc solid 3px;
 }
 .stepsnumber {
     background-color: #9356dc;
@@ -73,7 +71,7 @@ header{
     border-radius: 50%;
     padding: 9px 5px 9px 5px;
     margin-left: -20px;
-    width: 4%;
+    width: 10%;
     display: block;
     text-align: center;
     font-family: Roboto, sans-serif;
@@ -82,7 +80,7 @@ header{
 .fonctionnement button{
     border-radius: 20px;
     padding: 30px;
-    width: 30%;
+    width: 100%;
     height: 100%;
     margin-left: -5px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -174,11 +172,10 @@ header{
     margin-left: 20px;
     line-height: 0.5rem;
     font-family: roboto, sans-serif;
-   
 }
 .restaurant-name i{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     margin-left: 315px;
     width: 15px;
