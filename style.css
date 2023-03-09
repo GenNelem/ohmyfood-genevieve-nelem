@@ -17,7 +17,7 @@ header{
     margin-top:0 ;
 }
 
-
+/***MAIN***/ 
 
 .location{
     font-family: roboto,sans-serif;
@@ -35,8 +35,7 @@ header{
 /****MAIN****/
 /***DESCRIPTION****/
 .description{
-    border: 3px solid green;
-    background: 		hsl(0, 0%, 100%);
+    background:hsl(0, 0%, 100%);
     font-family: roboto, sans-serif;
     display: block;
     text-align: center;
@@ -50,6 +49,7 @@ header{
     margin-bottom: 50px;
     color: white;
     text-align: center;
+    line-height: 0.5px;
     background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 .boutton-explorez button:hover{
@@ -66,7 +66,6 @@ header{
     margin-inline-end: 0px;
     margin-inline-start: 40px;
     padding-inline-start: 40px;
-    border: 3px solid red;
 }
 .stepsnumber {
     background-color: #9356dc;
@@ -98,7 +97,6 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 5px solid greenyellow;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -111,9 +109,15 @@ header{
 
 
 /***RESTAURANT***/
-.restaurants
+.restaurants 
 {
-    border: 2px solid red;
+    background-color: rgb(245, 242, 242);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.restaurants h2{
+    margin-left: 45px;
+    margin-top: 5px;
 }
 .container{
     position: relative;
@@ -123,39 +127,88 @@ header{
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    border: solid 2px fuchsia;
+  
 }
 .container .card{
     width: 100%;
     position: relative;
     height: 100%;
     background: white;
-    margin: 30px 10px;
     padding: 0;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
-    border: solid 3px blue;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
 .container .card .image{
     position: relative;
     width: 100%;
     height: 100%;
     box-shadow: 0 5px 20px rgba(0,0,0,1,2);
+    border-radius:25px;
+    position: relative;
 }
+.container .card .image img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.image .image-text{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    color: black;
+    padding: 5px;
+    background-color: turquoise;
+    line-height: 0.1px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.image .image-text h4{
+ margin-top: 10px;
+
+}
+.restaurant-name{
+    margin-left: 20px;
+    line-height: 0.5rem;
+    font-family: roboto, sans-serif;
+   
+}
+.restaurant-name i{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 315px;
+    width: 15px;
+    cursor: pointer;
+  }   
+  .restaurant-name i:hover:before{
+    transition: all .5s ease-in-out;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
 
 
 /***FOOTER**/
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: rgb(53, 53, 53);
     color: white;
     font-family: roboto;
 }
 footer h2{
     font-family:'Shrikhand', cursive;
+    margin-left: 40px;
 }
 footer i {
     padding-right: 10px;
