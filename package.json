@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood-genevieve-nelem",
+  "version": "1.0.0",
+  "description": "projet animations et sass (projet 4 Ohmyfood)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenNelem/ohmyfood-genevieve-nelem.git"
+  },
+  "keywords": [
+    "openclassrooms",
+    "ohmyfood",
+    "animations"
+  ],
+  "author": "Genevieve Nelem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GenNelem/ohmyfood-genevieve-nelem/issues"
+  },
+  "homepage": "https://github.com/GenNelem/ohmyfood-genevieve-nelem#readme",
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}
