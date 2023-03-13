@@ -21,7 +21,7 @@
     "url": "https://github.com/GenNelem/ohmyfood-genevieve-nelem/issues"
   },
   "homepage": "https://github.com/GenNelem/ohmyfood-genevieve-nelem#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.59.2"
   }
 }
