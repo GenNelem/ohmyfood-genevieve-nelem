@@ -1,0 +1,13 @@
+.location{
+    background-color: lightgray;
+    text-align: center;
+    padding: 16px;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    & i{
+    font-size: 25px;
+}
+}

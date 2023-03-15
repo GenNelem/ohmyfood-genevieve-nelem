@@ -1,76 +1,62 @@
-*,
-::before,
-::after{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', cursive;
-    margin: 0;
-}
-
-header{
-    font-family:'shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
-    padding: 0.2rem;
-    position: relative;
-}
-main .location{
-    background-color: lightgray;
-    text-align: center;
-    padding: 16px;
-    font-family: 'roboto', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-}
-main .location i{
-    font-size: 25px;
-}
-.descrition-explore{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-.descrition-explore h2{
-    margin-top: 32px;
-    font-size: 32px;
-}
-.descrition-explore p{
-    font-size: 16px;
-}
-.descrition-explore button{
-        border-radius: 20px;
-        padding: 20px;
-        height: 30px;
-        margin: auto;
-        margin-bottom: 50px;
-        color: white;
-        text-align: center;
-        line-height: 0.5px;
-        background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    }
-.description-explore button:hover{
-        background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
-        transition:0.7s;
-    }
+@import "./sass/layout/base.scss";
+@import "./sass/layout/header.scss";
+@import "./sass/layout/location.scss";
+@import "./sass/layout/description-explore.scss";
+@import "./sass/layout/components.scss";
+@import "./sass//util.scss/box-shadow.scss";
+@import "./sass/util.scss/colors.scss";
+@import "./sass/util.scss/zoom.scss";
+@import "./sass/layout/menu.scss";
     
 
 /**SECTION FONCTIONNEMENT***/
 
-.fonctionnement ol{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-.fonctionnement li{
-    list-style: none;
-    border: #9356dc solid 1px;
-    border-radius: 25px;
-    width: 250px;
-    padding: 16px;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
+.fonctionnement {
+    counter-reset: steps;
+    & ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px;
+        justify-content: center;
+        @media (max-width:800px){
+            flex-direction: column;
+        }
+    }
+        
+    & li{
+        &::before{
+            content:counter(steps);
+            counter-increment: steps;
+            background-color: #9356dc;
+            color: white;
+            padding: 15px;
+            border-radius: 60%;
+            font-family: 'robot,sans-serif';
+            margin-left: -40px;
+        }
+        list-style: none;
+        border: none;
+        border-radius: 25px;
+        width: 300px;
+        padding: 16px;
+        @include base-shadow;
+        background-color: #f6f6f6;
+        color: black;
+        font-family: 'roboto', sans-serif;
+
+        
+        
+        &:hover {
+         @include zoom;
+    
+        }
+    }
+    
+    & a{
+        text-decoration: none;
+    }
+    & i{
+        padding: 1rem;
+    }
 }

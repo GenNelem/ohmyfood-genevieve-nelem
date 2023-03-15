@@ -1,0 +1,44 @@
+.menus{
+ background-color: hwb(0 100% 0%);
+ 
+  h2{
+    margin-bottom: 2rem;
+    font-family: 'roboto', sans-serif;
+}
+    
+    .menus_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        border: 2px solid red;
+       @media (max-width:1000px){
+        grid-template-columns: repeat(1,2fr);
+       }
+    }
+    & .card{
+        border: 3px solid black;
+    & .card_image{
+        height: 15rem;
+    
+        background-size: cover;
+        border-radius: 2rem;
+    }
+    &_image-1{
+        background-image: url(/images/restaurants/la-palette-du-gout.jpg)
+
+    }
+    &_image-2{
+        background-image: url(/images/restaurants/la-note-enchantee.jpg);
+        background-size: cover;
+    }
+    &_image-3{
+        background-image: url(/images/restaurants/a-la-francaise.jpg);
+        background-size: cover;
+    }
+    &_image-4{
+        background-image: url(/images/restaurants/le-delice-des-sens.jpg);
+        background-size: cover;
+    }
+    }
+
+}
