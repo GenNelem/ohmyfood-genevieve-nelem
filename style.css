@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   font-family: "shrikhand", cursive;
   text-align: center;
@@ -62,28 +67,45 @@ header {
 
 /***variables, functions mixins**/
 .menus {
-  background-color: hwb(0 100% 0%);
+  background-color: rgb(236, 232, 232);
 }
 .menus h2 {
   margin-bottom: 2rem;
   font-family: "roboto", sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .menus .menus_cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  border: 2px solid red;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media (max-width: 1000px) {
   .menus .menus_cards {
     grid-template-columns: repeat(1, 2fr);
   }
 }
-.menus .card {
-  border: 3px solid black;
+.menus .menus_cards .new {
+  position: relative;
+}
+.menus .menus_cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 6rem;
+  color: #045e47;
+  background-color: #99e2D0;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  font-family: "roboto", sans-serif;
 }
 .menus .card .card_image {
-  height: 15rem;
+  height: 20rem;
   background-size: cover;
   border-radius: 2rem;
 }
@@ -101,6 +123,28 @@ header {
 .menus .card_image-4 {
   background-image: url(/images/restaurants/le-delice-des-sens.jpg);
   background-size: cover;
+}
+.menus .card .card_description {
+  position: relative;
+  margin: 0.5rem;
+  font-family: "roboto", sans-serif;
+}
+.menus .card .card_description p {
+  font-family: "roboto", sans-serif;
+}
+.menus .card .card_description i {
+  font-size: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  text-align: center;
+}
+.menus .card .card_description i:hover:before {
+  transition: all 0.5s ease-in-out;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+  -webkit-text-fill-color: transparent;
 }
 
 /**SECTION FONCTIONNEMENT***/
