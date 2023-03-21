@@ -1,0 +1,11 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}/*# sourceMappingURL=base.css.map */

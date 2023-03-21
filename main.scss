@@ -1,0 +1,62 @@
+@import "./sass/layout/base.scss";
+@import "./sass/layout/header.scss";
+@import "./sass/layout/location.scss";
+@import "./sass/layout/description-explore.scss";
+@import "./sass/layout/components.scss";
+@import "./sass//util.scss/box-shadow.scss";
+@import "./sass/util.scss/colors.scss";
+@import "./sass/util.scss/zoom.scss";
+@import "./sass/layout/menu.scss";
+    
+
+/**SECTION FONCTIONNEMENT***/
+
+.fonctionnement {
+    counter-reset: steps;
+    & ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px;
+        justify-content: center;
+        @media (max-width:800px){
+            flex-direction: column;
+        }
+    }
+        
+    & li{
+        &::before{
+            content:counter(steps);
+            counter-increment: steps;
+            background-color: #9356dc;
+            color: white;
+            padding: 15px;
+            border-radius: 60%;
+            font-family: 'robot,sans-serif';
+            margin-left: -40px;
+        }
+        list-style: none;
+        border: none;
+        border-radius: 25px;
+        width: 300px;
+        padding: 16px;
+        @include base-shadow;
+        background-color: #f6f6f6;
+        color: black;
+        font-family: 'roboto', sans-serif;
+
+        
+        
+        &:hover {
+         @include zoom;
+    
+        }
+    }
+    
+    & a{
+        text-decoration: none;
+    }
+    & i{
+        padding: 1rem;
+    }
+}

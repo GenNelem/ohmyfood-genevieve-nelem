@@ -1,0 +1,91 @@
+.menus{
+ background-color: rgb(236, 232, 232);
+ 
+  h2{
+    margin-bottom: 2rem;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+    
+   & .menus_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+       @media (max-width:1000px){
+        grid-template-columns: repeat(1,2fr);
+       }
+       & .new{
+        position: relative;
+    &::before{
+        content: "Nouveau";
+        position: absolute;
+        height: 2rem;
+        width: 6rem;
+        color: #045e47;    
+        background-color: #99e2D0;
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        top: 1rem;
+        font-family: 'roboto', sans-serif;
+    }   
+    }
+       
+    }
+    & .card{
+    & .card_image{
+        height: 20rem;
+        background-size: cover;
+        border-radius: 2rem;
+    }
+    &_image-1{
+        background-image: url(/images/restaurants/la-palette-du-gout.jpg)
+
+    }
+    &_image-2{
+        background-image: url(/images/restaurants/la-note-enchantee.jpg);
+        background-size: cover;
+    }
+    &_image-3{
+        background-image: url(/images/restaurants/a-la-francaise.jpg);
+        background-size: cover;
+    }
+    &_image-4{
+        background-image: url(/images/restaurants/le-delice-des-sens.jpg);
+        background-size: cover;
+    }
+    & .card_description{
+        position: relative;
+            margin: 0.5rem;
+           font-family: 'roboto', sans-serif;
+           p{
+            font-family: 'roboto', sans-serif;
+        }
+        i{
+            font-size: 2rem;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            text-align: center;
+            &:hover:before{
+                transition: all .5s ease-in-out;
+                -webkit-background-clip: text;
+                font-weight: 900;
+                background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+                -webkit-text-fill-color: transparent;
+            }
+            
+            
+        }
+        }
+    
+    }
+
+    }
+
+ 
+
