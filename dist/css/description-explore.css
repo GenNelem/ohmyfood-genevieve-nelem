@@ -1,0 +1,31 @@
+.descrition-explore {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.descrition-explore h2 {
+  margin-top: 32px;
+  font-size: 32px;
+}
+.descrition-explore p {
+  font-size: 16px;
+}
+.descrition-explore button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin: 30px 0;
+  padding: 20px;
+  width: 50%;
+  transform: scale(1.02);
+  transition: 0.5s;
+  background-color: hsl(288, 87%, 96%);
+}
+.descrition-explore button:hover {
+  background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+  transition: 0.7s;
+}/*# sourceMappingURL=description-explore.css.map */

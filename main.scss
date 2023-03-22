@@ -5,8 +5,9 @@
 @import "./sass/layout/components.scss";
 @import "./sass//util.scss/box-shadow.scss";
 @import "./sass/util.scss/colors.scss";
-@import "./sass/util.scss/zoom.scss";
 @import "./sass/layout/menu.scss";
+@import "./sass/pages/restaurants.scss";
+
     
 
 /**SECTION FONCTIONNEMENT***/
@@ -45,8 +46,6 @@
         color: black;
         font-family: 'roboto', sans-serif;
 
-        
-        
         &:hover {
          @include zoom;
     
