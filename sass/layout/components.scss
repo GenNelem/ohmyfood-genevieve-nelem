@@ -14,7 +14,7 @@
  
   @mixin menu-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -97,6 +97,7 @@
       margin: 30px 0;
       padding: 20px;
       width: 15%;
+      font-weight: 900;
       &:hover{
         background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
         transition:0.7s;
