@@ -17,7 +17,6 @@
 
 }
 
-
 .restaurant__main{
   padding: 2rem;
   background-color: $lightergrey;
@@ -32,7 +31,7 @@
    & .restaurant__title
    {@include retaurant-title;
     & i{
-        margin-top:-30px;
+        margin-top:-1rem;
         @include fill-in-heart;  
     }
 }
@@ -56,6 +55,7 @@
         @include orders-category;
         overflow: hidden;
         border: none;
+        width: 90%;
     }
 & .orders-item{
         display: flex;

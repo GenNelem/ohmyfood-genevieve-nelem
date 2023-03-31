@@ -215,7 +215,7 @@ header {
   padding: 16px;
 }
 .restaurant__main .restaurant__title i {
-  margin-top: -30px;
+  margin-top: -1rem;
   font-size: 2rem;
   position: absolute;
   right: 2rem;
@@ -251,6 +251,7 @@ header {
   box-shadow: 4px 4px 6px #aaa;
   overflow: hidden;
   border: none;
+  width: 90%;
 }
 .restaurant__main .orders .orders__category:hover .check-mark {
   margin-right: 0rem;
