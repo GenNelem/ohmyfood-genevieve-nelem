@@ -88,7 +88,8 @@ header {
   }
 }
 .menus {
-  background-color: rgb(236, 232, 232);
+  background-color: #F6F6F6;
+  margin-bottom: 3rem;
 }
 .menus h2 {
   margin-bottom: 2rem;
@@ -128,7 +129,7 @@ header {
 .menus .card .card_image {
   height: 20rem;
   background-size: cover;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
 }
 .menus .card_image-1 {
   background-image: url(/images/restaurants/la-palette-du-gout.jpg);
@@ -147,17 +148,29 @@ header {
 }
 .menus .card .card_description {
   position: relative;
-  margin: 0.5rem;
+  background-color: white;
+  height: 5rem;
+  margin-top: -2rem;
+  position: relative;
+  border-radius: 0 0 15px 15px;
   font-family: "roboto", sans-serif;
+}
+.menus .card .card_description h3 {
+  margin: 0 1rem;
+}
+.menus .card .card_description h3::first-letter {
+  text-transform: capitalize;
 }
 .menus .card .card_description p {
   font-family: "roboto", sans-serif;
+  margin-left: 1rem;
 }
 .menus .card .card_description i {
   font-size: 2rem;
   position: absolute;
   right: 2rem;
   text-align: center;
+  margin-top: -4rem;
 }
 .menus .card .card_description i:hover:before {
   transition: all 0.5s ease-in-out;
