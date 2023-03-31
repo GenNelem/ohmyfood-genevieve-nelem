@@ -251,7 +251,7 @@ header {
   box-shadow: 4px 4px 6px #aaa;
   overflow: hidden;
   border: none;
-  width: 90%;
+  width: 82%;
 }
 .restaurant__main .orders .orders__category:hover .check-mark {
   margin-right: 0rem;
