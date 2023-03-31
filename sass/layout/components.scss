@@ -5,7 +5,23 @@
   margin-top: 0;
   font-weight: bold;
  }
+@mixin arrow{
+  position: absolute;
+  left: 20px;
+}
 
+@mixin restaurant-img{
+  object-fit: cover;
+        width: 100%;
+        height: 400px;
+}
+ @mixin menu-header{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:$base-shadow;
+    margin-top:0 ;
+ }
 
  @mixin footer{
    display: flex;
@@ -80,7 +96,15 @@ transition:0.7s;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+@mixin orders{
+  display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    font-family: "roboto", sans-serif;
+    @media (max-width:1200px){
+        grid-template-columns: 1fr;   
+    }
+}
 @mixin orders-category
  { 
   background-color: white;

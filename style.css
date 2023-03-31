@@ -87,12 +87,14 @@ header {
     transform: rotate(0);
   }
 }
-@keyframes appear {
+@keyframes fadein {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .menus {
@@ -280,7 +282,8 @@ header {
   cursor: pointer;
   box-shadow: 4px 4px 6px #aaa;
   overflow: hidden;
-  border: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 82%;
 }
 .restaurant__main .orders .orders__category:hover .check-mark {
@@ -293,24 +296,33 @@ header {
   color: white;
   animation: 0.3s quarter-spin ease-in-out;
 }
-.restaurant__main .orders .orders-item {
+.restaurant__main .entrees {
+  animation: fadein 2s ease-in-out 1.5s;
+}
+.restaurant__main .plats {
+  animation: fadein 4s ease-in-out 2s;
+}
+.restaurant__main .desserts {
+  animation: fadein 6s ease-in-out 3s;
+}
+.restaurant__main .orders-item {
   display: flex;
 }
-.restaurant__main .orders .orders-item h4 {
+.restaurant__main .orders-item h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.restaurant__main .orders .orders-item p {
+.restaurant__main .orders-item p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: normal;
 }
-.restaurant__main .orders .orders-item p::first-letter {
+.restaurant__main .orders-item p::first-letter {
   text-transform: capitalize;
 }
-.restaurant__main .orders .orders-item .order-item__price {
+.restaurant__main .orders-item .order-item__price {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
@@ -318,7 +330,7 @@ header {
   padding: 1rem;
   margin-right: -1rem;
 }
-.restaurant__main .orders .orders-item .check-mark {
+.restaurant__main .orders-item .check-mark {
   display: grid;
   place-items: center;
   background-color: #99e2D0;
@@ -327,7 +339,7 @@ header {
   border: none;
   border-radius: 0 15px 15px 0;
 }
-.restaurant__main .orders .orders-item .orders-item__description {
+.restaurant__main .orders-item .orders-item__description {
   padding: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;

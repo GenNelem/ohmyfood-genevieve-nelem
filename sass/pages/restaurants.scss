@@ -1,12 +1,7 @@
 .restaurant__header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow:$base-shadow;
-    margin-top:0 ;
+    @include menu-header;
     & .back-arrow {
-    position: absolute;
-    left: 20px;
+   @include arrow;
 }
     & i{
         font-weight: 900;
@@ -21,9 +16,7 @@
   padding: 2rem;
   background-color: $lightergrey;
     &  .restaurant__img img{
-        object-fit: cover;
-        width: 100%;
-        height: 400px;
+        @include restaurant-img;
     }
     & hr{
         @include hr
@@ -37,13 +30,7 @@
 }
 
 & .orders{
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3,1fr);
-    font-family: "roboto", sans-serif;
-    @media (max-width:1200px){
-        grid-template-columns: 1fr;   
-    }
+    @include orders;
 
 & h3{
         text-transform: uppercase;
@@ -52,11 +39,20 @@
     }
 
 & .orders__category{
-        @include orders-category;
-        overflow: hidden;
-        border: none;
+    @include orders-category;
+    @include overflow;
         width: 82%;
+        }
     }
+& .entrees{
+    animation:  fadein 2s ease-in-out 1.5s;
+}
+& .plats{
+    animation: fadein 4s ease-in-out 2s;
+}
+& .desserts{
+    animation: fadein 6s ease-in-out 3s;
+}
 & .orders-item{
         display: flex;
         & h4{
@@ -85,13 +81,19 @@
          padding: 1rem;
          @include overflow;
          }
-        }
-       
+         
     }
+        }
+    
+       
+     
 
+
+footer
+{
+ @include footer;
 }
-footer{
- @include footer;}
+
 
 
 
