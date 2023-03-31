@@ -87,6 +87,14 @@ header {
     transform: rotate(0);
   }
 }
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menus {
   background-color: #F6F6F6;
   margin-bottom: 3rem;
@@ -178,6 +186,15 @@ header {
   font-weight: 900;
   background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
   -webkit-text-fill-color: transparent;
+}
+.menus footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  font-size: 100%;
+  padding: 25px;
+  color: white;
+  width: 100%;
 }
 
 .restaurant__header {
