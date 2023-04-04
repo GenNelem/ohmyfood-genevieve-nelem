@@ -296,14 +296,20 @@ header {
   color: white;
   animation: 0.3s quarter-spin ease-in-out;
 }
-.restaurant__main .entrees {
-  animation: fadein 2s ease-in-out 1.5s;
+.restaurant__main .delay-1 {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
-.restaurant__main .plats {
-  animation: fadein 4s ease-in-out 2s;
+.restaurant__main .delay-2 {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
 }
-.restaurant__main .desserts {
-  animation: fadein 6s ease-in-out 3s;
+.restaurant__main .delay-3 {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
 }
 .restaurant__main .orders-item {
   display: flex;
@@ -312,6 +318,9 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.restaurant__main .orders-item h4::first-letter {
+  text-transform: capitalize;
 }
 .restaurant__main .orders-item p {
   overflow: hidden;

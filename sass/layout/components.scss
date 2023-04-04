@@ -132,5 +132,13 @@ transition:0.7s;
   border-radius: 0 15px 15px 0;
 }
 
+@mixin price{
+  display: flex;
+            align-items: flex-end;
+            margin-left: auto;
+            font-weight: bold;
+            padding: 1rem;
+            margin-right: -1rem;
+}
 
 

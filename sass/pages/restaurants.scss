@@ -44,19 +44,32 @@
         width: 82%;
         }
     }
-& .entrees{
-    animation:  fadein 2s ease-in-out 1.5s;
+
+& .delay-1{
+ animation-name: fadein;
+ animation-duration: 1s;
+ animation-delay: 0.2s;
 }
-& .plats{
-    animation: fadein 4s ease-in-out 2s;
+& .delay-2{
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+ 
 }
-& .desserts{
-    animation: fadein 6s ease-in-out 3s;
+ & .delay-3{
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+ 
 }
+
 & .orders-item{
         display: flex;
         & h4{
             @include overflow;
+            &::first-letter {
+                text-transform: capitalize;
+                }
         }
        & p{
        @include overflow;
@@ -67,12 +80,7 @@
 
        }
         & .order-item__price{
-            display: flex;
-            align-items: flex-end;
-            margin-left: auto;
-            font-weight: bold;
-            padding: 1rem;
-            margin-right: -1rem;
+            @include price
          }
         & .check-mark{
           @include check-mark;
