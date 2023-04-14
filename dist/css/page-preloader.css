@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  top: 30rem;
+  background-color: black;
+  position: fixed;
+  height: 100vh;
+  z-index: 3;
+  inset: 0;
+  opacity: 0.9;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: shrikhand;
+  font-size: 30px;
+  animation: loading 0s 3s forwards;
+}
+
+.ring {
+  width: 200px;
+  height: 200px;
+  border: 3px solid;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ring:nth-child(1) {
+  border-bottom-width: 8px;
+  border-color: fuchsia;
+  animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2) {
+  border-right-width: 8px;
+  border-color: rgb(0, 255, 179);
+  animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3) {
+  border-top-width: 8px;
+  border-color: rgb(230, 18, 18);
+  animation: rotate3 2s linear infinite;
+}
+
+.loading {
+  color: white;
+}/*# sourceMappingURL=page-preloader.css.map */
