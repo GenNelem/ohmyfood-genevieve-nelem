@@ -5,10 +5,10 @@
   align-items: center;
   border: none;
   top: 30rem;
-  background-color: black;
+  background-color: white;
   position: fixed;
   height: 100vh;
-  z-index: 3;
+  z-index: 1;
   inset: 0;
   opacity: 0.9;
   display: grid;
@@ -17,7 +17,7 @@
   color: rgb(0, 0, 0);
   font-family: shrikhand;
   font-size: 30px;
-  animation: loading 0s 3s forwards;
+  animation: loading 0s 2s forwards;
 }
 
 .ring {
@@ -30,7 +30,7 @@
 
 .ring:nth-child(1) {
   border-bottom-width: 8px;
-  border-color: fuchsia;
+  border-color: rgb(0, 0, 0);
   animation: rotate1 2s linear infinite;
 }
 
