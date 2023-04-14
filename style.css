@@ -454,7 +454,6 @@ footer {
   justify-content: center;
   align-items: center;
   border: none;
-  top: 30rem;
   background-color: black;
   position: fixed;
   height: 100vh;
@@ -463,10 +462,6 @@ footer {
   opacity: 0.8;
   display: grid;
   place-items: center;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  font-family: shrikhand;
-  font-size: 30px;
   animation: loading 0s 2s forwards;
 }
 
@@ -499,6 +494,9 @@ footer {
 
 .loading {
   color: white;
+  text-transform: uppercase;
+  font-family: shrikhand;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
