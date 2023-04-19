@@ -335,17 +335,17 @@ header {
 .restaurant__main .delay-1 {
   animation-name: fadein;
   animation-duration: 1s;
-  animation-delay: 0.2s;
+  animation-delay: 0.9s;
 }
 .restaurant__main .delay-2 {
   animation-name: fadein;
   animation-duration: 1s;
-  animation-delay: 0.3s;
+  animation-delay: 1s;
 }
 .restaurant__main .delay-3 {
   animation-name: fadein;
   animation-duration: 1s;
-  animation-delay: 0.4s;
+  animation-delay: 1.1s;
 }
 .restaurant__main .orders-item {
   display: flex;
@@ -484,10 +484,10 @@ footer {
   height: 100vh;
   z-index: 1;
   inset: 0;
-  opacity: 0.8;
+  opacity: 0.9;
   display: grid;
   place-items: center;
-  animation: loading 0s 2s forwards;
+  animation: loading 0s 0.8s forwards;
 }
 
 .ring {

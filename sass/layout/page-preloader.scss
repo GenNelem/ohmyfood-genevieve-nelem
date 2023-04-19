@@ -9,10 +9,10 @@ position: fixed;
 height: 100vh;
 z-index: 1;
 inset: 0;
-opacity: 0.8;
+opacity: 0.9;
 display: grid;
 place-items: center;
-animation: loading 0s 2s forwards;
+animation: loading 0s 0.8s forwards;
 }
 
 .ring{
