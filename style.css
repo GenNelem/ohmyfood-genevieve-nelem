@@ -177,18 +177,18 @@ header {
   border-radius: 2rem 2rem 0 0;
 }
 .menus .card_image-1 {
-  background-image: url(/images/restaurants/la-palette-du-gout.jpg);
+  background-image: url(/images2/la-palette-du-gout.jpg);
 }
 .menus .card_image-2 {
-  background-image: url(/images/restaurants/la-note-enchantee.jpg);
+  background-image: url(/images2/la-note-enchantee.jpg);
   background-size: cover;
 }
 .menus .card_image-3 {
-  background-image: url(/images/restaurants/a-la-francaise.jpg);
+  background-image: url(/images2/a-la-francaise.jpg);
   background-size: cover;
 }
 .menus .card_image-4 {
-  background-image: url(/images/restaurants/le-delice-des-sens.jpg);
+  background-image: url(/images2/le-delice-des-sens.jpg);
   background-size: cover;
 }
 .menus .card .card_description {
