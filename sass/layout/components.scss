@@ -66,9 +66,10 @@ margin: auto;
 margin-bottom: 50px;
 color: white;
 text-align: center;
-background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+background-image: linear-gradient(to top, #9356dc, #ff79da);
 &:hover{
-background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+background-image: linear-gradient(to top, #9356dc, #ff79da);
+opacity: 0.9;
 transition:0.7s;
   }
 
