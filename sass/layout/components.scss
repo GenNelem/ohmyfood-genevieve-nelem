@@ -99,6 +99,7 @@ transition:0.7s;
 @mixin orders{
   display: grid;
     gap: 2rem;
+    margin-left: 2rem;
     grid-template-columns: repeat(3,1fr);
     font-family: "roboto", sans-serif;
     @media (max-width:1200px){

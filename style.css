@@ -55,6 +55,7 @@ header {
 .descrition-explore h2 {
   margin-top: 32px;
   font-size: 32px;
+  font-weight: bold;
 }
 .descrition-explore p {
   font-size: 16px;
@@ -252,7 +253,7 @@ header {
 }
 
 .restaurant__main {
-  padding: 2rem;
+  /*padding: 2rem;*/
   background-color: #F6F6F6;
 }
 .restaurant__main .restaurant__img img {
@@ -297,6 +298,7 @@ header {
 .restaurant__main .orders {
   display: grid;
   gap: 2rem;
+  margin-left: 2rem;
   grid-template-columns: repeat(3, 1fr);
   font-family: "roboto", sans-serif;
 }
