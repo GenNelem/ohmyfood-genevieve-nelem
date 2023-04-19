@@ -298,13 +298,13 @@ header {
 .restaurant__main .orders {
   display: grid;
   gap: 2rem;
-  margin-left: 2rem;
   grid-template-columns: repeat(3, 1fr);
   font-family: "roboto", sans-serif;
 }
 @media (max-width: 1200px) {
   .restaurant__main .orders {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 .restaurant__main .orders h3 {
@@ -320,7 +320,6 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 82%;
 }
 .restaurant__main .orders .orders__category:hover .check-mark {
   margin-right: 0rem;
@@ -389,6 +388,28 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.btn__order {
+  display: flex;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  flex-direction: column;
+  font-family: "roboto", sans-serif;
+  margin-top: 2rem;
+  text-align: center;
+}
+.btn__order:hover {
+  background-image: linear-gradient(to left, #ab74f0, #c168eb, #dc77e7, #fa81ee, #f89dde);
+  transition: 0.7s;
 }
 
 footer {

@@ -41,7 +41,7 @@
 & .orders__category{
     @include orders-category;
     @include overflow;
-        width: 82%;
+       
         }
     }
 
@@ -91,6 +91,14 @@
          }
          
     }
+   
+        }
+        .btn__order{
+            @include button;
+            flex-direction: column;
+            font-family: "roboto", sans-serif;
+            margin-top: 2rem;
+            text-align: center
         }
     
        
